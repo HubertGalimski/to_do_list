@@ -1,13 +1,14 @@
 package io.github.HubertGalimski.todo;
 
+import io.github.HubertGalimski.archives.TodoArchives;
+import io.github.HubertGalimski.archives.TodoArchivesMapper;
+import io.github.HubertGalimski.archives.TodoArchivesRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.transaction.Transactional;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -19,9 +20,11 @@ class TodoServlet {
     private final Logger logger = LoggerFactory.getLogger(TodoServlet.class);
 
     private TodoRepository repository;
+    private TodoArchivesRepository todoArchivesRepository;
 
-    TodoServlet(TodoRepository repository) {
+    public TodoServlet(TodoRepository repository, TodoArchivesRepository todoArchivesRepository) {
         this.repository = repository;
+        this.todoArchivesRepository = todoArchivesRepository;
     }
 
     @GetMapping
@@ -59,6 +62,7 @@ class TodoServlet {
     ResponseEntity<List<Todo>> deleteSelected() {
         List<Todo> list = repository.findAll().stream().map(t -> {
                     if (t.isDone()) {
+                        TodoArchives todoArchives = todoArchivesRepository.save(TodoArchivesMapper.toTodoArchives(t));
                         repository.delete(t);
                         return t;
                     }
@@ -67,6 +71,7 @@ class TodoServlet {
         ).filter(Objects::nonNull).collect(Collectors.toList());
         return ResponseEntity.ok(list);
     }
+
 
 }
 

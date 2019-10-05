@@ -1,4 +1,4 @@
-package io.github.HubertGalimski.todo;
+package io.github.HubertGalimski.archives;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,23 +15,13 @@ import javax.validation.constraints.Size;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "todos")
-public
-class Todo {
+@Table(name = "todoarchives")
+public class TodoArchives {
+
     @Id
     @GeneratedValue(generator = "inc")
     @GenericGenerator(name = "inc", strategy = "increment")
     private Integer id;
     @Size(min = 1)
     private String text;
-    private boolean done;
-
-
-    public boolean isDone() {
-        return done;
-    }
-
-    public void setDone(boolean done) {
-        this.done = done;
-    }
 }
