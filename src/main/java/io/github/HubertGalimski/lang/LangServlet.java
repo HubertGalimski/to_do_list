@@ -25,4 +25,6 @@ class LangServlet {
         logger.info("Got request");
         return ResponseEntity.ok(service.findAll());
     }
+
+
 }

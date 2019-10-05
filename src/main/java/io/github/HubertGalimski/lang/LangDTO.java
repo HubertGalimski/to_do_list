@@ -1,5 +1,13 @@
 package io.github.HubertGalimski.lang;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
 class LangDTO {
     private Integer id;
     private String code;
@@ -9,19 +17,5 @@ class LangDTO {
         this.code = lang.getCode();
     }
 
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
 }

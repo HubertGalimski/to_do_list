@@ -1,12 +1,19 @@
 package io.github.HubertGalimski.todo;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;
 
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 @Table(name = "todos")
 class Todo {
@@ -14,31 +21,10 @@ class Todo {
     @GeneratedValue(generator = "inc")
     @GenericGenerator(name = "inc", strategy = "increment")
     private Integer id;
+    @Size(min = 1)
     private String text;
     private boolean done;
 
-    /**
-     * Hibernate (JPA) needs it.
-     */
-    @SuppressWarnings("unused")
-    Todo() {
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
 
     public boolean isDone() {
         return done;

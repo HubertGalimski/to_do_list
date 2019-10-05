@@ -1,34 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="433e3488-01d7-44fe-a745-52ee10763062" name="Default Changelist" comment="" />
+    <list default="true" id="433e3488-01d7-44fe-a745-52ee10763062" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/LangMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hello.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/Lang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/Lang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/LangDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/LangDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/LangRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/LangRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/LangService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/LangService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/LangServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/LangServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/Todo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/TodoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/TodoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/TodoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/TodoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V4__Create_todo_table_and_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V4__Create_todo_table_and_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/hello.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V4__Create_todo_table_and_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V4__Create_todo_table_and_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/hello/HelloService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/hello/HelloService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/hello/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/hello/HelloServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/lang/Lang.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/lang/Lang.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/lang/LangDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/lang/LangDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/lang/LangRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/lang/LangRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/lang/LangService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/lang/LangService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/lang/LangServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/lang/LangServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/todo/Todo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/todo/Todo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/todo/TodoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/todo/TodoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/todo/TodoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/todo/TodoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/hello.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/github/HubertGalimski/HelloApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/github/HubertGalimski/HelloApplicationTests.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Hubert Galimski" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="alwaysUpdateSnapshots" value="true" />
-        <option name="mavenHome" value="C:/Software/apache-maven-3.6.1" />
+        <option name="mavenHome" value="/usr/share/maven" />
         <option name="pluginUpdatePolicy" value="UPDATE" />
         <option name="usePluginRegistry" value="true" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1Q6Tv4Cl8nlqBfYsGtxxzVVpqGd" />
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -66,10 +124,26 @@
       <updated>1567090274260</updated>
       <workItem from="1567090277130" duration="13000" />
       <workItem from="1567090311900" duration="794000" />
+      <workItem from="1570139211191" duration="7156000" />
+      <workItem from="1570155269333" duration="538000" />
+      <workItem from="1570204669819" duration="21103000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
