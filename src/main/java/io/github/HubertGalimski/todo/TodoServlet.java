@@ -21,10 +21,12 @@ class TodoServlet {
 
     private TodoRepository repository;
     private TodoArchivesRepository todoArchivesRepository;
+    private TodoService todoService;
 
-    public TodoServlet(TodoRepository repository, TodoArchivesRepository todoArchivesRepository) {
+    public TodoServlet(TodoRepository repository, TodoArchivesRepository todoArchivesRepository, TodoService todoService) {
         this.repository = repository;
         this.todoArchivesRepository = todoArchivesRepository;
+        this.todoService = todoService;
     }
 
     @GetMapping
@@ -57,21 +59,10 @@ class TodoServlet {
 
     }
 
-    @Transactional
+
     @DeleteMapping("")
     ResponseEntity<List<Todo>> deleteSelected() {
-        List<Todo> list = repository.findAll().stream().map(t -> {
-                    if (t.isDone()) {
-                        TodoArchives todoArchives = todoArchivesRepository.save(TodoArchivesMapper.toTodoArchives(t));
-                        repository.delete(t);
-                        return t;
-                    }
-                    return null;
-                }
-        ).filter(Objects::nonNull).collect(Collectors.toList());
-        return ResponseEntity.ok(list);
+        return ResponseEntity.ok(todoService.deleteAllByDone());
     }
-
-
 }
 
