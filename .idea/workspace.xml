@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="433e3488-01d7-44fe-a745-52ee10763062" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/TodoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/TodoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/TodoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/TodoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/TodoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/todo/TodoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/todo/TodoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/archives/TodoArchives.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/archives/TodoArchives.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/Lang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/lang/Lang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/HubertGalimski/todo/Todo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/todo/TodoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/HubertGalimski/todo/TodoServlet.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,7 +111,7 @@
       <workItem from="1570204669819" duration="27172000" />
       <workItem from="1570283550588" duration="703000" />
       <workItem from="1570292695577" duration="74000" />
-      <workItem from="1570322068171" duration="1519000" />
+      <workItem from="1570322068171" duration="4195000" />
     </task>
     <task id="LOCAL-00001" summary="Added remove option">
       <created>1570238178561</created>
@@ -135,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570243392944</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added TodoRepository">
+      <created>1570323809163</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570323809163</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +163,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added remove option" />
     <MESSAGE value="Added archives &#10;Added option &quot;move to archives&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added archives &#10;Added option &quot;move to archives&quot;" />
+    <MESSAGE value="Added TodoRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added TodoRepository" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
