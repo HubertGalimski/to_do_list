@@ -1,4 +1,4 @@
-# to_do_list
+# REST version od ToDo list
 
 ### The purpose of this project is to write a ToDo list using: 
 - Java 11
